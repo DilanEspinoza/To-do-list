@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+:root {
+  --color-fondo: #026842;
+  --colo-botones-primarios: #013e28;
+  --color-fondo-calculadora: #00150d;
+  --color-text: #ffffff;
+  --color-botones: #012a1a;
+  --color-botones-hover: #013e28;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  background-color: #026842;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+  width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+button {
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.titulo-sin-tarea {
+  display: none;
+}
+
+.contenedor__agregar_tareas {
+  margin: 0 auto;
+  width: 50%;
+  padding: 50px;
+  border-radius: 10px;
+  background-color: #00000042;
+  backdrop-filter: blur(10px);
+}
+
+#contenedor__titulo_tarea {
+  width: 80%;
+  padding: 15px;
+  border-radius: 10px;
+  border-radius: none;
+  outline: none;
+  border: none;
+  background-color: #00000042;
+  backdrop-filter: blur(10px);
+  color: white;
+  margin-top: 10px;
+}
+
+#contenedor__descripcion_tarea {
+  resize: none;
+  padding: 10px;
+  width: 80%;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #00000042;
+  backdrop-filter: blur(10px);
+  color: white;
+}
+
+#btn-agregar {
+  width: 150px;
+  /* background-color: #000000a8; */
+  background-color: #193e71;
+  color: white;
+  backdrop-filter: blur(10px);
+  margin-top: 10px;
+}
+
+#btn-agregar:hover {
+  background-color: #335585;
+}
+
+.titulo-informacion {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.contenedor__tareas {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 80px;
+  gap: 50px;
+}
+
+.contenedor_tarea {
+  min-width: 300px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  background-color: #00000042;
+  color: black;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 20px 20px 20px black;
+}
+
+#titulo-tarea {
+  color: #fff;
+}
+
+#btn-eliminar {
+  width: 100%;
+  color: white;
+}
+
+#btn-eliminar {
+  background-color: #dc143c;
+}
+
+#btn-eliminar:hover {
+  background-color: #ee5e66;
+}
+
+#btn-editar {
+  background-color: #193e71;
+}
+
+#btn-editar:hover {
+  background-color: #4374ac;
+}

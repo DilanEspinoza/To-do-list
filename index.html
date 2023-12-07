@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h2 class="titulo-sin-tarea">No hay tareas por el momento</h2>
+
+      <div class="contenedor__agregar_tareas">
+        <h1>Lista de tareas pendientes</h1>
+        <input
+          type="text"
+          placeholder="Asigna el titulo de tu tarea"
+          id="contenedor__titulo_tarea"
+          name="contenedor__titulo_tarea"
+        />
+        <textarea
+          name="contenedor__descripcion_tarea"
+          id="contenedor__descripcion_tarea"
+          placeholder="Mi primera tarea"
+        ></textarea>
+        <button id="btn-agregar">Agregar</button>
+      </div>
+      <h2 class="titulo-informacion"></h2>
+      <div class="contenedor__tareas"></div>
+    </main>
+  </body>
+</html>
